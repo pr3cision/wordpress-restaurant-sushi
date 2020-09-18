@@ -1,0 +1,260 @@
+/*!
+Theme Name: tp2_benjamin_loic
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tp2_benjamin_loic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/**********Générale**********/
+
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+a{
+	text-decoration: none;
+  }
+  
+  .bg-black{
+	background-color: rgb(19, 19, 19);
+  }
+  
+  .font{
+	font-family: "Satisfy";
+  }
+  
+  .text-red{
+	color: rgb(200, 0, 0);
+  }
+  
+  .savoirPlus, .savoirPlus:hover{
+	color: black;
+	text-decoration: underline;
+	text-transform: uppercase;
+  }
+  
+  .savoirPlus:hover{
+	opacity: 0.8;
+  }
+  
+  .text{
+	color: rgb(75, 75, 75);
+  }
+  
+  /**********Top**********/
+  
+  .bgTop {
+	background-attachment: fixed;
+	background-image: url("./images/banniereSushi.jpg");
+	background-position: center 0;
+	background-repeat: no-repeat;
+	height: 550px;
+  }
+  
+  /***Id Scroll Spy***/
+  
+  #Qualité{
+	padding-top: 95px;
+  }
+  
+  #Jour{
+	padding-top: 95px;
+  }
+  
+  #Historique{
+	padding-top: 95px;
+  }
+  
+  #Événements{
+	padding-top: 95px;
+  }
+  
+  /**********Body**********/
+  
+  .bgDescription{
+	background-image: url("./images/description.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  .bgHistoire{
+	background-image: url("./images/histoire.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+  
+  .icon1{
+	color: rgb(200, 0, 0); 
+	font-size: 50px;
+	padding: 20px;
+  }
+  
+  .icon2{ 
+	color: rgb(200, 0, 0);
+	font-size: 30px;
+  }
+	
+  .ingredient{
+	color:rgb(170, 169, 169);
+  }
+  
+  .points{
+	border-bottom: black 2px dotted;
+	flex-grow: 1;
+	transform: scaleY(0.5);
+  }
+  
+  .dateScript{
+	right: 0;
+	top: 0;
+  }
+  
+  /***Image événements***/
+  
+  /*zoom img*/
+  .zoomImg{
+	transition: 500ms;
+  }
+  
+  .zoomImg:hover{
+	transform: scale(1.25);
+	filter: opacity(0.9);
+  }
+  
+  .overFlow{
+	overflow: hidden;
+	position: relative;
+  }
+  
+  /*date boite rouge*/
+  .jours{
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	line-height: 30px;
+	padding-top: 15px;
+  }
+  
+  .mois{
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+  }
+  
+  /*boite rouge*/
+  .dateBoite{
+	background: rgb(200, 0, 0);
+	height: 75px;
+	right: 10px;
+	top: 10px;
+	width: 75px;
+	outline: 1px solid white;
+	outline-offset: -5px;
+  }
+  
+  /*boite text*/
+  .boiteText{
+	height: 275px;
+  }
+  
+  /**********Bas**********/
+  
+  /***Carousel***/
+  
+  /*fleche*/
+  .carousel-control-prev{
+	width: 3%;
+  }
+  
+  .carousel-control-next{
+	width: 3%;
+  }
+  
+  /*like insta*/
+  
+  .overlay { 
+	background-color: rgba(37, 37, 37, 0.3);
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .3s;
+  }
+  
+  .container:hover .overlay {
+	opacity: 1;
+  }
+  
+  .icon{
+	color: white;
+	font-size: 15px;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%; 
+	transform: translate(-50%, -50%);
+  }
+  
+  
+  
+  /***Email***/
+  
+  #email{
+	background: none;
+  }
+  
+  .form-control{
+	background: none;
+	border: none;
+	border-radius: 20px;
+  }
+  
+  .input-group{
+	border: solid 1px rgb(136, 136, 136);
+	border-radius: 20px;
+  }
+  
+  .Mail{
+	border-left: solid 1px rgb(136, 136, 136);
+	color: rgb(136, 136, 136);  
+  }
+  
+  .iconMail{
+	font-size: 20px;
+	margin-top: 20px;
+	padding: 10px;
+  }
+  
+  /**********Média query**********/
+  
+  @media (max-width: 991px){
+  
+	.bgHistoire{
+	 height: 575px;
+	}
+  
+	.bgDescription{
+	 height: 575px;
+	}
+  
+  }
+  
+  @media (max-width: 991px){
+  
+	.bgHistoire{
+	  height: 350px;
+	}
+   
+	.bgDescription{
+	  height: 350px;
+	}
+   
+  }
